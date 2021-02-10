@@ -1,0 +1,388 @@
+.about {
+    &__info {
+        position: relative;
+        width: 100%;
+        text-align: left;
+
+        .title {
+            color: $blue;
+            font-size: m(42);
+            font-weight: 900;
+            font-family: 'Noto Sans TC', sans-serif;
+
+            @media (min-width: 1600px) {
+                font-size: 42px;
+            }
+
+            @media (max-width: 1600px) and (min-width: 968px) {
+                font-size: 42px;
+            }
+        }
+
+        .text {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: m(25);
+            margin: m(20) 0;
+            line-height: 1.5;
+
+            @media (min-width: 1600px) {
+                font-size: 23px;
+                margin: 20px 0;
+            }
+
+            @media (max-width: 1600px) and (min-width: 968px) {
+                font-size: 23px;
+                margin: 20px 0;
+            }
+        }
+    }
+
+    &__content {
+        p {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: m(25);
+            text-align: left;
+            letter-spacing: 2px;
+            line-height: 1.5;
+
+            @media (min-width: 968px) {
+                font-size: 17px;
+            }
+        }
+
+        ol {
+            li {
+                font-family: 'Noto Sans TC', sans-serif;
+                font-size: m(25);
+                text-align: left;
+                letter-spacing: 2px;
+                margin: 5px 0;
+
+                @media (min-width: 968px) {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+.form {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: auto;
+    padding-top: m(80);
+    display: none;
+
+    @media (min-width: 968px) {
+        padding-top: 80px;
+    }
+
+    &__close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $blue;
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+            -webkit-transform-origin: center;
+            transform-origin: center;
+
+            &:nth-child(1) {
+                -webkit-transform: translate(-50%, -50%) rotate(45deg);
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+
+    &__box {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 30px;
+        margin: 0 auto;
+
+        .half {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            .input {
+                width: calc(50% - 1px) !important;
+
+                @media (min-width: 968px) {
+                    width: 49.5% !important;
+                }
+            }
+        }
+
+        .check {
+            margin: 15px 0;
+
+            @media (min-width: 968px) {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            .box {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+
+                @media (min-width: 968px) {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                }
+
+                div {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    margin-right: 10px;
+
+                    @media (min-width: 968px) {
+                        margin-left: 10px;
+                        margin-right: 0;
+                    }
+
+                    label {
+                        margin: 0;
+                        margin-left: 10px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    &__info {
+        position: relative;
+        width: 100%;
+        text-align: left;
+
+        .title {
+            color: $blue;
+            font-size: m(42);
+            font-weight: 900;
+            font-family: 'Noto Sans TC', sans-serif;
+
+            @media (min-width: 1600px) {
+                font-size: 42px;
+            }
+
+            @media (max-width: 1600px) and (min-width: 968px) {
+                font-size: 42px;
+            }
+        }
+
+        .text {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: m(25);
+            margin: m(20) 0;
+
+            @media (min-width: 1600px) {
+                font-size: 23px;
+                margin: 20px 0;
+            }
+
+            @media (max-width: 1600px) and (min-width: 968px) {
+                font-size: 23px;
+                margin: 20px 0;
+            }
+        }
+    }
+
+    &__group {
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        .input {
+            width: 100%;
+            margin: 1px 0;
+            border: none;
+            background-color: $blue;
+            color: #FFF;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: m(25);
+            padding: m(10) m(20);
+
+            @media (min-width: 1600px) {
+                font-size: 23px;
+                margin: 5px 0;
+                padding: 10px 20px;
+            }
+
+            @media (max-width: 1600px) and (min-width: 968px) {
+                font-size: 23px;
+                margin: 5px 0;
+                padding: 10px 20px;
+            }
+
+            &::-webkit-input-placeholder {
+
+                color: #8898ff;
+
+            }
+
+            &:-ms-input-placeholder {
+
+                color: #8898ff;
+
+            }
+
+            &::-ms-input-placeholder {
+
+                color: #8898ff;
+
+            }
+
+            &::placeholder {
+
+                color: #8898ff;
+
+            }
+        }
+
+        .select {
+            width: 100%;
+            margin: 1px 0;
+            border: none;
+            color: #FFF;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: m(25);
+            padding: m(10) m(20);
+            background: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: $blue;
+
+            @media (min-width: 1600px) {
+                font-size: 23px;
+                margin: 5px 0;
+                padding: 10px 20px;
+            }
+
+            @media (max-width: 1600px) and (min-width: 968px) {
+                font-size: 23px;
+                margin: 5px 0;
+                padding: 10px 20px;
+            }
+
+            &::-webkit-input-placeholder {
+
+                color: #8898ff;
+
+            }
+
+            &:-ms-input-placeholder {
+
+                color: #8898ff;
+
+            }
+
+            &::-ms-input-placeholder {
+
+                color: #8898ff;
+
+            }
+
+            &::placeholder {
+
+                color: #8898ff;
+
+            }
+        }
+
+        a {
+            font-size: 30px;
+            color: #fff !important;
+            background-image: url(../../images/btn-bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: inline-block;
+            padding: 5px 40px;
+            font-family: 'Noto Sans TC', sans-serif;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+
+        h3 {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: m(25);
+            text-align: left;
+
+            @media (min-width: 968px) {
+                font-size: 17px;
+            }
+        }
+
+        label {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: m(25);
+
+            @media (min-width: 968px) {
+                font-size: 17px;
+            }
+        }
+
+        p {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 10px;
+            text-align: left;
+        }
+    }
+}

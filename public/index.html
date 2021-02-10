@@ -1,43 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="zh-tw">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <!-- <meta name="viewport" content="width=640 ,user-scalable=no"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Meta -->
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <title>測試</title>
+
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="dist/css/all.min.css">
+
+  <!-- Favicon.ico -->
+  <link href="" rel="shortcut icon" />
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="wrap">
+    <div class="menu menu--active">
+      <div class="menu__content">
+        <ul>
+          <li>
+            <a href="#newyear">H.I.T.新年特輯</a>
+          </li>
+          /
+          <li>
+            <a href="#tab">助攻福袋包</a>
+          </li>
+          /
+          <li>
+            <a href="#download" style="color: #00f6ff;">下載關鍵報告</a>
+          </li>
+          <!-- /<li><a href="#download">報名活動</a></li> -->
+        </ul>
+      </div>
+    </div>
+    <section class="kv">
+      <a class="kv__home" href="javascript:void(0)">
+        <img src="images/logo.png" alt="數位轉型神助攻" />
+      </a>
+      <!-- <div class="kv__box">
+        <div class="kv__content">
+          <h1 class="kv__title">
+            <img src="images/main-title.png" alt="數位轉型神助攻" />
+          </h1>
+          <div class="kv__text">
+            <p>打造專屬於你的完美方案，不怕沒人讓你問！</p>
+            <p>H.I.T 團隊 YouTube 影片教學大公開</p>
+            <p>從核心到雲端升級工作效率、保護公司數據，坐下來聊給你聽</p>
+          </div>
+          <a href="#video">
+            <img class="kv__video" src="images/main-video.png" alt="" />
+          </a>
+        </div>
+        <div class="kv__img">
+          <picture>
+            <source media="(min-width:968px)" srcset="images/main-people.png">
+            <source media="(min-width:200px)" srcset="images/main-people-m.png">
+            <img src="images/main-people.png" alt="" />
+          </picture>
+        </div>
+      </div> -->
+    </section>
+    <section class="newyear">
+      <div class="newyear__box" id="newyear">
+        <!-- <div class="newyear__info">
+          <h2 class="info__title">IBM 助攻天團上線送好禮</h2>
+          <p class="info__text">還在煩惱年前籌備與年後策略規劃嗎？<br/>H.I.T.顧問團分享神助攻方案，讓2021 IT 人開季順利！</p>
+        </div>
+        <div class="newyear__content">
+          <div class="change">
+            <a class="change--active" href="javascript:void(0)">IT專屬年前福袋大放送</a>
+            <a href="javascript:void(0)">無痛年後收心組合</a>
+          </div>
+          <div class="change__video">
+            <iframe src="https://www.youtube.com/embed/0d4nLXIansU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="change__sub">
+            <p></p>
+            <a href="javascript:void(0)">
+              <span></span>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <section class="tab">
+      <div class="tab__box" id="tab">
+        <!-- <div class="tab__info">
+          <div class="info__img">
+            <img src="images/tab-title.png" alt="">
+          </div>
+          <div class="info__content">
+            <h2 class="info__title">IBM 技術助攻大聯盟</h2>
+            <p class="info__text">與各家代理商聯手合作全方位解決方案產品線，以實惠價格與不間斷數據供給<br/>讓企業2021新世代運營不中斷！</p>
+          </div>
+        </div>
+        <div class="tab__content">
+          <div class="item">
+            <div class="item__title">助攻組合1：混合雲整合支援 /
+              <span>搶先實機體驗地表最強主機LinuxONE整合應用打造新世代混合雲創新平台</span>
+            </div>
+            <div class="item__content">
+              <div class="company">
+                <div class="company__content">
+                  <div class="company__logo">
+                    <img src="images/company/company6.png" alt="">
+                  </div>
+                  <div class="company__text">
+                    <p>混合多雲儲存架構支援 專屬諮詢服務</p>
+                  </div>
+                  <div class="company__btn">
+                    <a href="javascript:void(0)">獲得神助攻！</a>
+                  </div>
+                </div>
+              </div>
+              <div class="company">
+                <div class="company__content">
+                  <div class="company__logo">
+                    <img src="images/company/company8.png" alt="">
+                  </div>
+                  <div class="company__text">
+                    <p>IBM LinuxONE 降本增效 客戶專屬效益評估服務
+                    </p>
+                  </div>
+                  <div class="company__btn">
+                    <a href="javascript:void(0)">獲得神助攻！</a>
+                  </div>
+                </div>
+              </div>
+              <div class="company">
+                <div class="company__content">
+                  <div class="company__logo">
+                    <img src="images/company/company7.png" alt="">
+                  </div>
+                  <div class="company__text">
+                    <p>IBM Cloud Pak on LinuxONE 客戶專屬商業價值評估服務
+                    </p>
+                  </div>
+                  <div class="company__btn">
+                    <a href="javascript:void(0)">獲得神助攻！</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__title">助攻組合 2：人工智慧能力升級 / 
+              <span>複雜資訊架構、多種應用場景各種方案選擇，一次搞定</span>
+            </div>
+            <div class="item__content">
+              <div class="company">
+                <div class="company__content">
+                  <div class="company__logo">
+                    <img src="images/company/company2.png" alt="">
+                  </div>
+                  <div class="company__text">
+                    <p>專屬免費諮詢服務 打造企業AI與數據策略
+                    </p>
+                  </div>
+                  <div class="company__btn">
+                    <a href="javascript:void(0)">獲得神助攻！</a>
+                  </div>
+                </div>
+              </div>
+              <div class="company">
+                <div class="company__content">
+                  <div class="company__logo">
+                    <img src="images/company/company5.png" alt="">
+                  </div>
+                  <div class="company__text">
+                    <p>ESS3000 AI 儲存神器 技術VIP體驗行程
+                    </p>
+                  </div>
+                  <div class="company__btn">
+                    <a href="javascript:void(0)">獲得神助攻！</a>
+                  </div>
+                </div>
+              </div>
+              <div class="company">
+                <div class="company__content">
+                  <div class="company__logo">
+                    <img src="images/company/company1.png" alt="">
+                  </div>
+                  <div class="company__text">
+                    <p>免費機器學習 專屬顧問諮詢服務
+                    </p>
+                  </div>
+                  <div class="company__btn">
+                    <a href="javascript:void(0)">獲得神助攻！</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__title">助攻組合 3：奠基穩健的核心與架構 / 
+              <span>全方位儲存與運算平台無負擔打造可靠又高效的工作環境</span>
+            </div>
+            <div class="item__content">
+              <div class="company">
+                <div class="company__content">
+                  <div class="company__logo">
+                    <img src="images/company/company3.png" alt="">
+                  </div>
+                  <div class="company__text">
+                    <p>台灣首套IBM i7.4 DB2 Mirror 展示中心VIP 參訪行程</p>
+                  </div>
+                  <div class="company__btn">
+                    <a href="javascript:void(0)">獲得神助攻！</a>
+                  </div>
+                </div>
+              </div>
+              <div class="company">
+                <div class="company__content">
+                  <div class="company__logo">
+                    <img src="images/company/company4.png" alt="">
+                  </div>
+                  <div class="company__text">
+                    <p>最高ROI SAP HANA on Power 特價助攻方案</p>
+                  </div>
+                  <div class="company__btn">
+                    <a href="javascript:void(0)">獲得神助攻！</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <img class="tab__people" src="images/tab-people.png" />
+    </section>
+
+    <section class="video">
+      <div class="video__box">
+        <div class="video__info" id="video">
+        </div>
+        <div class="video__content" id="youtube">
+        </div>
+        <div class="video__slider" id="swiper">
+        </div>
+      </div>
+    </section>
+    <section class="download">
+      <div class="download__box">
+        <div class="download__info" id="download">
+          <!-- <h2 class="info__title">企業混合雲端策略</h2>
+          <p class="info__text">讓您的基礎架構在保持永續運行下，亦可彈性擴充、敏捷反應以及符合成本效益，並且確保資料安全。</p>
+          <a class="info__link" href="javascript:void(0)">下載關鍵報告</a> -->
+        </div>
+        <div class="download__img">
+          <img src="images/download-bg.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="youtube">
+      <div class="youtube__box">
+        <div class="box">
+          <img src="images/youtube.png" alt="">
+          <div class="link">
+            <span>|</span>
+            <a href="https://www.youtube.com/channel/UC4h1Qb9uO5LdTxSeJNnKJ4g">追蹤 H.I.T 與 IBM Taiwan YouTube 頻道</a>
+          </div>
+        </div>
+        <a class="arrow" href="https://www.youtube.com/channel/UC4h1Qb9uO5LdTxSeJNnKJ4g">
+          <img src="images/arrow.png" alt="">
+        </a>
+      </div>
+    </section>
+  </div>
+  <div class="form" id="root">
+    <!-- <a class="form__close" href="javascript:void(0)"><span></span><span></span></a>
+    <div class="form__box">
+      <form>
+        <div class="form__info">
+          <h2 class="title">填寫表單</h2>
+          <p class="text">取得 H.I.T 顧問神助攻解答解鎖完整影片與 IBM 關鍵趨勢報告</p>
+        </div>
+        <div class="form__group half">
+          <input class="input" type="text" placeholder="姓⽒">
+          <input class="input" type="text" placeholder="名字">
+        </div>
+        <div class="form__group">
+          <input class="input" type="text" placeholder="電話號碼">
+        </div>
+        <div class="form__group">
+          <input class="input" type="text" placeholder="公司">
+        </div>
+        <div class="form__group">
+          <input class="input" type="text" placeholder="部⾨">
+        </div>
+        <div class="form__group">
+          <input class="input" type="text" placeholder="職稱">
+        </div>
+        <div class="form__group">
+          <input class="input" type="text" placeholder="電⼦信箱">
+        </div>
+        <div class="form__group">
+          <select name="group" class="select" id="group">
+            <option value="0" selected disabled>公司規模</option>
+            <option value="0">0</option>
+          </select>
+        </div>
+        <div class="form__group check">
+          <h3>IBM 得以使⽤我的聯絡⼈資料，以讓我得知產品、服務及供應⽅案的最新資訊</h3>
+          <div class="box">
+            <div>
+              <input type="radio" id="email" name="type" value="email">
+              <label for="email">透過電⼦郵件</label>
+            </div>
+            <div>
+                <input type="radio" id="phone" name="type" value="phone">
+                <label for="phone">透過電話</label>
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <p>您可以隨時透過傳送電⼦郵件⾄ netsupp@us.ibm.com 來取消接收最新訊息。您也可以透過按⼀下每封此類電⼦郵件中的取消訂閱鏈結來取消訂閱接收⾏銷電⼦郵件。有關我們的處理作業詳細資訊可以在 IBM
+                隱私權聲明。提交此表單時，即表⽰我確認我已閱讀並瞭解 IBM 隱私權聲明。</p>
+        </div>
+        <div class="form__group">
+          <a class="submit" href="javascript:void">填寫完畢</a>
+        </div>
+      </form>
+    </div> -->
+  </div>
+
+  <script src="dist/js/font.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+</body>
+
 </html>
